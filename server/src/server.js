@@ -32,7 +32,7 @@ app.use(express.json()); // use for converting json data to js objects
 app.use(cookieParser());
 
 //static folder for uploads
-app.use('/backend/src/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/server/src/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // auth route here
 app.use('/api/auth', authRoutes);
